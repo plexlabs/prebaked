@@ -22,7 +22,7 @@ jobs:
           file: ./PreBakeDjango
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest-amd64
+          tags: ghcr.io/${{ github.repository_owner }}/prebakedjango:amd64
           cache-from: type=gha,scope=amd64
           cache-to: type=gha,mode=max,scope=amd64
 
@@ -44,6 +44,6 @@ jobs:
           file: ./PreBakeDjango
           platforms: linux/arm64
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest-arm64
+          tags: ghcr.io/${{ github.repository_owner }}/prebakedjango:arm64
           cache-from: type=gha,scope=arm64
           cache-to: type=gha,mode=max,scope=arm64
