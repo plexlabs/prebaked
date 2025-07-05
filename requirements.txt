@@ -1,0 +1,19 @@
+Django==5.1
+djangorestframework
+daphne==4.1.2
+psycopg2-binary
+django-environ
+pandas
+pyyaml
+numpy
+blosc
+msgpack
+pymongo
+pytz
+mmtf-python
+
+
+#To run SSL supported runserver_plus in development
+# django-extensions #Also needs to be added to INSTALLED_APPS in settings.py
+# pyOpenSSL
+# Werkzeug

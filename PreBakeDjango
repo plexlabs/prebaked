@@ -1,0 +1,15 @@
+FROM python:3.12-slim
+RUN pip install rdkit
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# # Set default shell and command
+# SHELL ["/bin/bash", "-c"]
+
+# RUN find /usr -type d -name '__pycache__' -exec rm -r {} + && \
+#     find /usr -type f -name '*.pyc' -delete
+
+# # Define a default command to run when the container starts.
+# # This keeps the container alive and can be used as an entry point for further commands
+# # in your CI pipeline or when running as a K8s pod.
+# CMD ["python3"]
