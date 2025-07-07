@@ -11,6 +11,9 @@ msgpack
 pymongo
 pytz
 mmtf-python
+celery
+pulumi
+pulumi_aws
 
 
 #To run SSL supported runserver_plus in development
