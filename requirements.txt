@@ -17,7 +17,6 @@ pulumi_aws
 infisical
 google-auth
 
-
 #To run SSL supported runserver_plus in development
 # django-extensions #Also needs to be added to INSTALLED_APPS in settings.py
 # pyOpenSSL
