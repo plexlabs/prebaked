@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+celery
+redis
+pydantic
+python-dotenv
+pulumi
+pulumi-aws
+google-auth

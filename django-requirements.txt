@@ -16,6 +16,9 @@ pulumi
 pulumi_aws
 infisical
 google-auth
+pulumi>=3.0.0,<4.0.0
+boto3>=1.18.0
+paramiko>=2.7.2
 
 #To run SSL supported runserver_plus in development
 # django-extensions #Also needs to be added to INSTALLED_APPS in settings.py
