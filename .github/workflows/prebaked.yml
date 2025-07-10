@@ -31,10 +31,10 @@ jobs:
         include:
           - platform: linux/amd64
             runner: ubuntu-24.04
-            cache-scope: amd64
+            arch: amd64
           - platform: linux/arm64
             runner: ubuntu-24.04-arm
-            cache-scope: arm64
+            arch: arm64
     runs-on: ${{ matrix.runner }}
     permissions:
       packages: write
@@ -56,7 +56,7 @@ jobs:
           file: ./PreBakeDjango
           platforms: ${{ matrix.platform }}
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/prebakedjango:${{ matrix.cache-scope }}
+          tags: ghcr.io/${{ github.repository_owner }}/prebakedjango:${{ matrix.arch }}
 
   build-fastapi:
     needs: detect-changes
@@ -66,10 +66,10 @@ jobs:
         include:
           - platform: linux/amd64
             runner: ubuntu-24.04
-            cache-scope: amd64
+            arch: amd64
           - platform: linux/arm64
             runner: ubuntu-24.04-arm
-            cache-scope: arm64
+            arch: arm64
     runs-on: ${{ matrix.runner }}
     permissions:
       packages: write
@@ -91,7 +91,7 @@ jobs:
           file: ./PreBakedFastAPI
           platforms: ${{ matrix.platform }}
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/prebakedfastapi:${{ matrix.cache-scope }}
+          tags: ghcr.io/${{ github.repository_owner }}/prebakedfastapi:${{ matrix.arch }}
 
   create-django-manifest:
     needs: build-django
