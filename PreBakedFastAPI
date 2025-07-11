@@ -1,5 +1,10 @@
 FROM python:3.12-slim
 
+
+RUN apt-get update
+RUN apt-get install -y curl && curl -fsSL https://get.pulumi.com | sh
+ENV PATH="/root/.pulumi/bin:${PATH}"
+
 COPY fastapi-requirements.txt .
 
 RUN pip install --no-cache-dir -r fastapi-requirements.txt
