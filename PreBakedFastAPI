@@ -5,7 +5,7 @@ RUN apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 RUN curl -fsSL https://get.pulumi.com | sh
 ENV PATH="/root/.pulumi/bin:${PATH}"
 
-RUN pulumi plugin install resource aws
+RUN pulumi plugin install resource aws v6.83.0
 
 COPY fastapi-requirements.txt .
 
