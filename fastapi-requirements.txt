@@ -1,16 +1,7 @@
-# fastapi
-# uvicorn
-# celery
-# redis
-# pydantic
-# python-dotenv
-# pulumi
-# pulumi-aws
-# google-auth
-fastapi==0.104.1
-uvicorn==0.24.0
-celery==5.3.4
-redis==5.0.1
-pulumi>=3.0.0
-pulumi-aws>=6.0.0
-pydantic==2.5.0
+fastapi==0.116.1
+uvicorn==0.35.0
+celery==5.5.3
+redis>=6.0.0
+pulumi>=3.181.0
+pulumi-aws>=6.83.0
+pydantic==2.11.7
